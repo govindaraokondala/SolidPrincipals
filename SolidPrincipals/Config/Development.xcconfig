@@ -1,0 +1,14 @@
+//
+//  Development.xcconfig
+//  Solid
+//
+//  Created by Govind on 28/07/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PROTOCAL = https
+HOST = fakestoreapi.com
+BASE_URL = $(PROTOCAL)://$(HOST)
+
