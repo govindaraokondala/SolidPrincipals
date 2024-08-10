@@ -24,42 +24,29 @@ class ProductsViewModel:ObservableObject {
     func fetchProducts() {
         hasError = false
         isLoading = true
-        if isNetworkConnected() {
+        if networkService.isNetworkConnected() {
             networkService.loadProducts {[weak self] result in
-                guard let self else {
-                    return
-                }
-                self.handleResult(result: result)
+                self?.handleResult(result: result)
             }
         } else {
             databaseService.loadProducts {[weak self] result in
-                guard let self else {
-                    return
-                }
-                self.handleResult(result: result)
+                self?.handleResult(result: result)
             }
         }
     }
     private func handleResult(result:Result<[Product], ResponseError>) {
         DispatchQueue.main.async {[weak self] in
-            guard let self else {
-                return
-            }
-            self.isLoading = false
+            self?.isLoading = false
             switch result {
             case .success(let prodcuts):
-                self.products = prodcuts
+                self?.products = prodcuts
             case .failure(let error):
-                self.products = []
-                self.errorMessage = error.localizedDescription
-                self.hasError = true
+                self?.products = []
+                self?.errorMessage = error.localizedDescription
+                self?.hasError = true
             }
             
         }
     }
     
-    func isNetworkConnected() -> Bool {
-        // Currently, I'm assuming true, but in a real scenario, we would typically use a Reachability class to check internet availability.
-        true
-    }
 }

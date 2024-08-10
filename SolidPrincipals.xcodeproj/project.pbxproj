@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DF15412C672B7700FF40C3 /* SolidPrincipalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF15402C672B7700FF40C3 /* SolidPrincipalsTests.swift */; };
+		00DF15482C672BA200FF40C3 /* MockProductsViewNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF15472C672BA200FF40C3 /* MockProductsViewNetworkService.swift */; };
+		00DF154A2C672DA400FF40C3 /* SampleProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 00DF15492C672DA400FF40C3 /* SampleProducts.json */; };
+		00DF154C2C672E1B00FF40C3 /* LoadDataFromLocalFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF154B2C672E1B00FF40C3 /* LoadDataFromLocalFiles.swift */; };
+		00DF154E2C67325D00FF40C3 /* TestProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF154D2C67325D00FF40C3 /* TestProductsViewModel.swift */; };
 		00F9D2532C56A548002A0221 /* SolidPrincipalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F9D2522C56A548002A0221 /* SolidPrincipalsApp.swift */; };
 		00F9D2572C56A54A002A0221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F9D2562C56A54A002A0221 /* Assets.xcassets */; };
 		00F9D25A2C56A54A002A0221 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F9D2592C56A54A002A0221 /* Preview Assets.xcassets */; };
@@ -26,7 +31,23 @@
 		00F9D2852C56A586002A0221 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F9D2772C56A586002A0221 /* AppConfig.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00DF15422C672B7700FF40C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F9D2472C56A548002A0221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F9D24E2C56A548002A0221;
+			remoteInfo = SolidPrincipals;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		00DF153E2C672B7700FF40C3 /* SolidPrincipalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidPrincipalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DF15402C672B7700FF40C3 /* SolidPrincipalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidPrincipalsTests.swift; sourceTree = "<group>"; };
+		00DF15472C672BA200FF40C3 /* MockProductsViewNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductsViewNetworkService.swift; sourceTree = "<group>"; };
+		00DF15492C672DA400FF40C3 /* SampleProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleProducts.json; sourceTree = "<group>"; };
+		00DF154B2C672E1B00FF40C3 /* LoadDataFromLocalFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataFromLocalFiles.swift; sourceTree = "<group>"; };
+		00DF154D2C67325D00FF40C3 /* TestProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProductsViewModel.swift; sourceTree = "<group>"; };
 		00F9D24F2C56A548002A0221 /* SolidPrincipals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidPrincipals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F9D2522C56A548002A0221 /* SolidPrincipalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidPrincipalsApp.swift; sourceTree = "<group>"; };
 		00F9D2562C56A54A002A0221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00DF153B2C672B7700FF40C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00F9D24C2C56A548002A0221 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DF153F2C672B7700FF40C3 /* SolidPrincipalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				00DF15402C672B7700FF40C3 /* SolidPrincipalsTests.swift */,
+				00DF15472C672BA200FF40C3 /* MockProductsViewNetworkService.swift */,
+				00DF15492C672DA400FF40C3 /* SampleProducts.json */,
+				00DF154B2C672E1B00FF40C3 /* LoadDataFromLocalFiles.swift */,
+				00DF154D2C67325D00FF40C3 /* TestProductsViewModel.swift */,
+			);
+			path = SolidPrincipalsTests;
+			sourceTree = "<group>";
+		};
 		00F9D2462C56A548002A0221 = {
 			isa = PBXGroup;
 			children = (
 				00F9D2512C56A548002A0221 /* SolidPrincipals */,
+				00DF153F2C672B7700FF40C3 /* SolidPrincipalsTests */,
 				00F9D2502C56A548002A0221 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				00F9D24F2C56A548002A0221 /* SolidPrincipals.app */,
+				00DF153E2C672B7700FF40C3 /* SolidPrincipalsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +233,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00DF153D2C672B7700FF40C3 /* SolidPrincipalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DF15462C672B7700FF40C3 /* Build configuration list for PBXNativeTarget "SolidPrincipalsTests" */;
+			buildPhases = (
+				00DF153A2C672B7700FF40C3 /* Sources */,
+				00DF153B2C672B7700FF40C3 /* Frameworks */,
+				00DF153C2C672B7700FF40C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DF15432C672B7700FF40C3 /* PBXTargetDependency */,
+			);
+			name = SolidPrincipalsTests;
+			productName = SolidPrincipalsTests;
+			productReference = 00DF153E2C672B7700FF40C3 /* SolidPrincipalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		00F9D24E2C56A548002A0221 /* SolidPrincipals */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00F9D25D2C56A54A002A0221 /* Build configuration list for PBXNativeTarget "SolidPrincipals" */;
@@ -218,6 +278,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					00DF153D2C672B7700FF40C3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 00F9D24E2C56A548002A0221;
+					};
 					00F9D24E2C56A548002A0221 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -237,11 +301,20 @@
 			projectRoot = "";
 			targets = (
 				00F9D24E2C56A548002A0221 /* SolidPrincipals */,
+				00DF153D2C672B7700FF40C3 /* SolidPrincipalsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00DF153C2C672B7700FF40C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF154A2C672DA400FF40C3 /* SampleProducts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00F9D24D2C56A548002A0221 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +329,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00DF153A2C672B7700FF40C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF154C2C672E1B00FF40C3 /* LoadDataFromLocalFiles.swift in Sources */,
+				00DF15412C672B7700FF40C3 /* SolidPrincipalsTests.swift in Sources */,
+				00DF154E2C67325D00FF40C3 /* TestProductsViewModel.swift in Sources */,
+				00DF15482C672BA200FF40C3 /* MockProductsViewNetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00F9D24B2C56A548002A0221 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,7 +362,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		00DF15432C672B7700FF40C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00F9D24E2C56A548002A0221 /* SolidPrincipals */;
+			targetProxy = 00DF15422C672B7700FF40C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		00DF15442C672B7700FF40C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevelopment.SolidPrincipalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolidPrincipals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SolidPrincipals";
+			};
+			name = Debug;
+		};
+		00DF15452C672B7700FF40C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevelopment.SolidPrincipalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolidPrincipals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SolidPrincipals";
+			};
+			name = Release;
+		};
 		00F9D25B2C56A54A002A0221 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00F9D2762C56A586002A0221 /* Development.xcconfig */;
@@ -460,6 +586,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00DF15462C672B7700FF40C3 /* Build configuration list for PBXNativeTarget "SolidPrincipalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DF15442C672B7700FF40C3 /* Debug */,
+				00DF15452C672B7700FF40C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00F9D24A2C56A548002A0221 /* Build configuration list for PBXProject "SolidPrincipals" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

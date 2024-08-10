@@ -16,7 +16,7 @@ protocol TopSellingsProductsViewServiceDelegate {
 
 
 protocol ProductsViewServiceDelegate:AllProductsViewServiceDelegate,TopSellingsProductsViewServiceDelegate {
-   
+   func isNetworkConnected() -> Bool
 }
 
 
@@ -28,6 +28,10 @@ class ProductsViewNetworkService:ProductsViewServiceDelegate {
     
     func loadProducts(completion: @escaping (Result<[Product], ResponseError>) -> Void) {
         NetworkManager().getRequests( "\(AppConfig.BaseUrl)/products", type: [Product].self, completion: completion)
+    }
+    func isNetworkConnected() -> Bool {
+        // Currently, I'm assuming true, but in a real scenario, we would typically use a Reachability class to check internet availability.
+        return true
     }
 }
 class ProductsViewDatabaseService:AllProductsViewServiceDelegate {
